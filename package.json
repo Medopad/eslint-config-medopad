@@ -1,0 +1,12 @@
+{
+  "name": "eslint-config-medopad",
+  "version": "0.0.0",
+  "description": "Medopad's ESLint configuration.",
+  "keywords": ["eslint", "eslintconfig", "medopad"],
+  "license": "MIT",
+  "author": "Julius Osokinas <julius.osokinas@medopad.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medopad/eslint-config-medopad.git"
+  }
+}
