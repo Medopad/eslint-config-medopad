@@ -8,5 +8,23 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/medopad/eslint-config-medopad.git"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "eslint": "^3.17.0",
+    "eslint-config-standard": "^7.0.0",
+    "eslint-plugin-standard": "^2.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-promise": "^3.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.0",
+    "should": "^11.2.0"
+  },
+  "scripts": {
+    "test": "mocha *.test.js"
   }
 }
