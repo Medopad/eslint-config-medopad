@@ -17,3 +17,12 @@ node_js:
   - 5
   - 6
   - 7
+
+deploy:
+  provider: npm
+  email: j.osokinas@gmail.com
+  api_key:
+    secure: jaYIWjjUUV917MjhROQZypmryuULPhVRaHVf6dXUSCmR6Ndi1u/QhMuKU94w5x+gw3TCROTj6i8fF/T42hJyVsZQkEfPjBh8lANcs3oNlR1iOCgaTPxYf/dclyqTT3ju59Q7fde9bWvUL3BxL/ihob6cVp3MoIRsvQJMURD39t6jzfhg6/ALiEtDY48Jsso4vhBeSwp6RnoDmYagV7DxShs3CAuo6NpCsT3mZPDcMl1NXFJudpfVW+0JrA1Fmk4NuxT81dSglWmMOZnOe4DeW8YVZs7yqMNM0BnLiFZ+X/6aZXtHpTUD/ISXqd55jUdk1U8/NcHImd0Sn7A+z/NdNpo3g7cCjn5uuO7MqYi2KjpmpdT8PmWqPy4FKj5+FvEawO/2h9zARJF52Oa7G2sRiGjvpm0SP+1GVKnpERBpJixtKt99VEVI7KIFVTHKrPewmhil29Yyh0fZdEeBCREkBDK5MyEOkQY6aEkWoHnrCVp1yN4PzpMdNGWZBwFWEjijFZiXr5xMPjszA9RvXCJxm8eHVFzJforYclQHgnPJaEn2Z3oC7UbqI/QMchNETR0zg5I7ED8kzdXq/o8pbaY4HkLN+F4Fqz/o2mzZFaXoulCx5q8hhlj5MBAV/6EIWM73QUd2IxTMQg1+YT1Z4+WQdxsB2nFXR6U/rUQ2lfHqpWw=
+  on:
+    tags: true
+    branch: master
