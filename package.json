@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-medopad",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Medopad's ESLint configuration.",
   "keywords": ["eslint", "eslintconfig", "medopad"],
   "license": "MIT",
