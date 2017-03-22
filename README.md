@@ -1,5 +1,6 @@
 # eslint-config-medopad
 
+[![Travis CI Build Status](https://img.shields.io/travis/medopad/eslint-config-medopad/master.svg?style=flat-square)](https://travis-ci.org/medopad/eslint-config-medopad)
 [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
 
 This is [Medopad](http://medopad.com)'s [ESLint](http://eslint.org) config.
