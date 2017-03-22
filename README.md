@@ -24,6 +24,16 @@ extends:
 
 You can override settings from the shareable config by adding them directly into your `.eslintrc` file.
 
+## Badge
+
+Include the badge in your README to let people know that the code is using the Medopad code style.
+
+[![Medopad Code Style](https://img.shields.io/badge/code%20style-Medopad-brightgreen.svg?style=flat-square)](https://github.com/Medopad/eslint-config-medopad)
+
+```markdown
+[![Medopad Code Style](https://img.shields.io/badge/code%20style-Medopad-brightgreen.svg?style=flat-square)](https://github.com/Medopad/eslint-config-medopad)
+```
+
 ## Test
 
 ```
