@@ -14,8 +14,8 @@
     "node": ">=5.0.0"
   },
   "dependencies": {
-    "eslint": "3.17.x",
-    "eslint-config-standard": "7.0.x",
+    "eslint": "3.18.x",
+    "eslint-config-standard": "7.1.x",
     "eslint-plugin-standard": "2.1.x",
     "eslint-plugin-import": "2.2.x",
     "eslint-plugin-promise": "3.5.x"
