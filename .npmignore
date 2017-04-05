@@ -1,0 +1,11 @@
+# Editor configuration
+.editorconfig
+
+# Travis CI setup
+.travis.yml
+
+# Current package's ESLint config
+.eslintrc.js
+
+# Tests
+*.test.js
