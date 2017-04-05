@@ -5,11 +5,13 @@ module.exports = {
   },
   extends: [
     'standard',
+    'plugin:node/recommended',
     'plugin:import/recommended',
     'plugin:promise/recommended'
   ],
   plugins: [
     'standard',
+    'node',
     'import',
     'promise'
   ]
