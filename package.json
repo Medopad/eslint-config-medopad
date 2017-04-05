@@ -17,6 +17,7 @@
     "eslint": "3.18.x",
     "eslint-config-standard": "7.1.x",
     "eslint-plugin-standard": "2.1.x",
+    "eslint-plugin-node": "4.2.x",
     "eslint-plugin-import": "2.2.x",
     "eslint-plugin-promise": "3.5.x"
   },
