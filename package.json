@@ -26,6 +26,6 @@
     "should": "^11.2.0"
   },
   "scripts": {
-    "test": "mocha *.test.js"
+    "test": "eslint . && mocha *.test.js"
   }
 }
