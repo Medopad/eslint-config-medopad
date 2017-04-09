@@ -14,5 +14,8 @@ module.exports = {
     'node',
     'import',
     'promise'
-  ]
+  ],
+  rules: {
+    'max-len': 'error'
+  }
 }
