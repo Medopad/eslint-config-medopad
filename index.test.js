@@ -1,3 +1,5 @@
+const CLIEngine = require('eslint').CLIEngine
+const crypto = require('crypto')
 const should = require('should')
 const config = require('./')
 
@@ -14,6 +16,10 @@ describe('Medopad\'s ESLint configuration', () => {
     should(config).have.property('plugins')
   })
 
+  it('should have property `rules`', () => {
+    should(config).have.property('rules')
+  })
+
   it('should have all required modules listed as dependencies', () => {
     config.extends.forEach((config) => {
       if (!config.startsWith('plugin')) {
@@ -23,6 +29,22 @@ describe('Medopad\'s ESLint configuration', () => {
 
     config.plugins.forEach((plugin) => {
       (() => require.resolve(`eslint-plugin-${plugin}`)).should.not.throw()
+    })
+  })
+
+  describe('Rules', () => {
+    const cli = new CLIEngine({
+      configFile: 'index.js'
+    })
+
+    it('should validate `max-len`', () => {
+      let code
+
+      code = `console.log('${crypto.randomBytes(32).toString('hex')}')\n`
+      should(cli.executeOnText(code).errorCount).equal(0)
+
+      code = `console.log('${crypto.randomBytes(33).toString('hex')}')\n`
+      should(cli.executeOnText(code).errorCount).equal(1)
     })
   })
 })
