@@ -19,7 +19,11 @@
     "eslint-plugin-standard": "3.0.x",
     "eslint-plugin-node": "4.2.x",
     "eslint-plugin-import": "2.2.x",
-    "eslint-plugin-promise": "3.5.x"
+    "eslint-plugin-promise": "3.5.x",
+    "eslint-plugin-lodash": "2.4.x"
+  },
+  "peerDependencies": {
+    "lodash": "~4.17.0"
   },
   "devDependencies": {
     "mocha": "^3.0.0",

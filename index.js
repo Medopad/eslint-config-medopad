@@ -7,13 +7,15 @@ module.exports = {
     'standard',
     'plugin:node/recommended',
     'plugin:import/recommended',
-    'plugin:promise/recommended'
+    'plugin:promise/recommended',
+    'plugin:lodash/recommended'
   ],
   plugins: [
     'standard',
     'node',
     'import',
-    'promise'
+    'promise',
+    'lodash'
   ],
   rules: {
     'max-len': 'error'

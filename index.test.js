@@ -1,6 +1,10 @@
 const CLIEngine = require('eslint').CLIEngine
 const crypto = require('crypto')
 const should = require('should')
+
+const forEach = require('lodash').forEach
+const startsWith = require('lodash').startsWith
+
 const config = require('./')
 
 describe('Medopad\'s ESLint configuration', () => {
@@ -21,13 +25,13 @@ describe('Medopad\'s ESLint configuration', () => {
   })
 
   it('should have all required modules listed as dependencies', () => {
-    config.extends.forEach((config) => {
-      if (!config.startsWith('plugin')) {
+    forEach(config.extends, (config) => {
+      if (!startsWith(config, 'plugin')) {
         (() => require.resolve(`eslint-config-${config}`)).should.not.throw()
       }
     })
 
-    config.plugins.forEach((plugin) => {
+    forEach(config.plugins, (plugin) => {
       (() => require.resolve(`eslint-plugin-${plugin}`)).should.not.throw()
     })
   })
