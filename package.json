@@ -16,11 +16,11 @@
   "dependencies": {
     "eslint": "3.19.x",
     "eslint-config-standard": "10.2.x",
-    "eslint-plugin-standard": "3.0.x",
-    "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-lodash": "2.4.x",
+    "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "3.5.x",
-    "eslint-plugin-lodash": "2.4.x"
+    "eslint-plugin-standard": "3.0.x"
   },
   "peerDependencies": {
     "lodash": "~4.17.0"
