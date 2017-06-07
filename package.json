@@ -2,7 +2,11 @@
   "name": "eslint-config-medopad",
   "version": "3.0.0",
   "description": "Medopad's ESLint configuration.",
-  "keywords": ["eslint", "eslintconfig", "medopad"],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "medopad"
+  ],
   "license": "MIT",
   "author": "Julius Osokinas <julius.osokinas@medopad.com>",
   "repository": {
