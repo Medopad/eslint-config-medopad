@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-medopad",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Medopad's ESLint configuration.",
   "keywords": [
     "eslint",
