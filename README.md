@@ -35,8 +35,16 @@ Include the badge in your README to let people know that the code is using the M
 [![Medopad Code Style](https://img.shields.io/badge/code%20style-Medopad-brightgreen.svg?style=flat-square)](https://github.com/Medopad/eslint-config-medopad)
 ```
 
-## Test
+## Develop
+
+### Test
 
 ```
 npm test
+```
+
+### Release
+
+```
+npm version [major|minor|patch] -m "v%s"
 ```
