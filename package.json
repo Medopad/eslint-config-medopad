@@ -34,6 +34,7 @@
     "should": "^11.2.0"
   },
   "scripts": {
-    "test": "eslint . && mocha *.test.js"
+    "test": "eslint . && mocha *.test.js",
+    "preversion": "npm test"
   }
 }
