@@ -1,6 +1,11 @@
 # Node files and folders
 node_modules/
 npm-debug.log
+npm-shrinkwrap.json
+package-lock.json
+
+# Yarn dependency lock
+yarn.lock
 
 # Folder view configuration files
 .DS_Store
