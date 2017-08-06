@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-medopad",
-  "version": "3.4.0",
+  "version": "3.5.0",
   "description": "Medopad's ESLint configuration.",
   "keywords": [
     "eslint",
@@ -20,11 +20,11 @@
     "npm": ">=5.0.0"
   },
   "dependencies": {
-    "eslint": "^4.2.0",
+    "eslint": "^4.4.0",
     "eslint-config-standard": "^10.2.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-lodash": "^2.4.0",
-    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.0"
   },
@@ -32,7 +32,7 @@
     "lodash": "^4.17.0"
   },
   "devDependencies": {
-    "mocha": "^3.4.0",
+    "mocha": "^3.5.0",
     "should": "^11.2.0"
   },
   "scripts": {
