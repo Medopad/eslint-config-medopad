@@ -18,6 +18,17 @@ module.exports = {
     'lodash'
   ],
   rules: {
-    'max-len': 'error'
+    'max-len': 'error',
+    'lodash/prefer-lodash-method': [
+      'error',
+      {
+        'ignoreMethods': [
+          'filter',
+          'forEach',
+          'map',
+          'reduce'
+        ]
+      }
+    ]
   }
 }

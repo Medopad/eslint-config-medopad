@@ -50,5 +50,21 @@ describe('Medopad\'s ESLint configuration', () => {
       code = `console.log('${crypto.randomBytes(33).toString('hex')}')\n`
       should(cli.executeOnText(code).errorCount).equal(1)
     })
+
+    it('should validate `lodash/prefer-lodash-method`', () => {
+      let code
+
+      code = `[].filter()\n`
+      should(cli.executeOnText(code).errorCount).equal(0)
+
+      code = `[].forEach()\n`
+      should(cli.executeOnText(code).errorCount).equal(0)
+
+      code = `[].map()\n`
+      should(cli.executeOnText(code).errorCount).equal(0)
+
+      code = `[].reduce()\n`
+      should(cli.executeOnText(code).errorCount).equal(0)
+    })
   })
 })
