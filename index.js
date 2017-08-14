@@ -26,7 +26,10 @@ module.exports = {
           'filter',
           'forEach',
           'map',
-          'reduce'
+          'reduce',
+          'split',
+          'toLower',
+          'toUpper'
         ]
       }
     ]
