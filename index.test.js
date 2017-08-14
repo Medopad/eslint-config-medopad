@@ -65,6 +65,15 @@ describe('Medopad\'s ESLint configuration', () => {
 
       code = `[].reduce()\n`
       should(cli.executeOnText(code).errorCount).equal(0)
+
+      code = `'a-b-c'.split('-')\n`
+      should(cli.executeOnText(code).errorCount).equal(0)
+
+      code = `'LONDON'.toLowerCase()\n`
+      should(cli.executeOnText(code).errorCount).equal(0)
+
+      code = `'london'.toUpperCase()\n`
+      should(cli.executeOnText(code).errorCount).equal(0)
     })
   })
 })
