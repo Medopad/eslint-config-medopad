@@ -19,6 +19,7 @@ module.exports = {
   ],
   rules: {
     'max-len': 'error',
+    'lodash/prefer-constant': 'off',
     'lodash/prefer-lodash-method': [
       'error',
       {

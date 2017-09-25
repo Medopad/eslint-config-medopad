@@ -51,6 +51,13 @@ describe('Medopad\'s ESLint configuration', () => {
       should(cli.executeOnText(code).errorCount).equal(1)
     })
 
+    it('should validate `lodash/prefer-constant`', () => {
+      let code
+
+      code = `module.exports = { pi: () => 3.1415 }\n`
+      should(cli.executeOnText(code).errorCount).equal(0)
+    })
+
     it('should validate `lodash/prefer-lodash-method`', () => {
       let code
 
